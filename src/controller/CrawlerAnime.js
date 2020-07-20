@@ -48,7 +48,7 @@ class CrawlerAnime {
         const src = await page.$eval('iframe', (e) => e.src)
         links.push({ url: list[i], link: src })
       } catch (e) {
-        console.log('erro: ', list[i], i)
+        links.push({ url: list[i], link: 'failed' })
       }
     }
 
