@@ -27,6 +27,11 @@ class CrawlerTranslate {
         URL: `https://translate.google.com/?sl=pt&tl=pt&text=${word}&op=translate`
       },
       {
+        language: 'pt',
+        code: 'pt-PT',
+        URL: `https://translate.google.com/?sl=pt&tl=pt&text=${word}&op=translate`
+      },
+      {
         language: 'en',
         code: 'en-US',
         URL: `https://translate.google.com/?sl=pt&tl=en&text=${word}&op=translate`
