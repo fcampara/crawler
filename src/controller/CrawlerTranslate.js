@@ -46,7 +46,6 @@ class CrawlerTranslate {
       await page.goto(URL, {
         waitUntil: 'networkidle2'
       })
-
       await page.waitForSelector('[data-phrase-index="0"]')
       const text = await page.$eval(
         '[data-phrase-index="0"]',
